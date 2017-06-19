@@ -24,7 +24,7 @@ public class Rabbit extends Animal
 		 * When a rabbit is grazing, there is a 20% chance of a new rabbit being created at the same location.
 		 */		
 		Random rnd = new Random();
-		if (rnd.nextInt(100) < 20)
+		if (rnd.nextInt(100) <= 20)
 		{
 			vsimulation.newOrganism(OrganismType.RABBIT);
 		}
