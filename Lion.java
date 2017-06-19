@@ -26,7 +26,7 @@ public class Lion extends Animal
 		
 		System.out.println("Lion ate animal " + animal);
 		Random rnd = new Random();
-		if (rnd.nextInt(100) < 70)
+		if (rnd.nextInt(100) <= 70)
 		{
 			/*
 			 * Lions eat zebras and rabbits when they are found at the same location with a chance of 70%.
