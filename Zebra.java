@@ -18,7 +18,7 @@ public class Zebra extends Animal
 		 * When a zebra is grazing, there is a 10% chance of a new zebra being created at the same location.
 		 */
 		Random rnd = new Random();
-		if (rnd.nextInt(100) < 10)
+		if (rnd.nextInt(100) <= 10)
 		{
 			Organism org = vsimulation.newOrganism(OrganismType.ZEBRA);
 			org.setCurrentX(getCurrentX());
