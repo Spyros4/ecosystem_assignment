@@ -246,7 +246,7 @@ public class Ecosystem extends Application
 		/*
 		 * New plants are created randomly (1% chance in each cycle of the simulation).
 		 */
-		if (rnd.nextInt(100) < 1)
+		if (rnd.nextInt(100) <= 1)
 		{
 			newOrganism(OrganismType.PLANT);
 			System.out.println("New plant created!");
